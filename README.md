@@ -1,17 +1,17 @@
 <h1>API IRIS SCRAPING</h1>
 
-<p>Rodar o conteiner</p>
+**Subir o conteiner**
 
-# sudo docker run -it -v ~/Workspace://Workspace --rm -p 5000:5000 --name tensorflow-flask lexcrt/debian:flask-tensorflow /bin/bash 
+sudo docker run -it -v ~/Workspace://Workspace --rm -p 5000:5000 --name tensorflow-flask lexcrt/debian:flask-tensorflow /bin/bash 
 
-<p>Exportar variavel app_name.py</p>
+**Exportar variavel app_name.py**
 
-# export FLASK_APP=server.py
-# export LC_ALL=C.UTF-8 && export LANG=C.UTF-8
+export FLASK_APP=server.py
+export LC_ALL=C.UTF-8 && export LANG=C.UTF-8
 
-# Rode
+**Roda o comando**
 
-Run command  `python3.5 server.py`
+python3.5 server.py
 
 **Test**
 
