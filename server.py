@@ -2,6 +2,11 @@ from flask import Flask,request
 from flask import json
 import requests
 import time
+import sys
+
+sys.path.insert(0, "/TensorFlowKeras")
+
+from TensorFlowKeras import label_image
 
 app = Flask(__name__)
 
@@ -10,7 +15,7 @@ def download(imgurl):
 	imgfilename = datetime.datetime.today().strftime('%Y%m%d') + '_' + imgurl.split('/')[-1]
 	with open("uploads/" + imgfilename, 'wb') as f:
 		f.write(requests.get(imgurl).content)
-	return imgfilename;
+	return imgfilename
 
 
 @app.route("/", methods = ['GET'])
@@ -24,14 +29,15 @@ def predict():
 		)
 
 	image_url = request.args.get('image_url')
-	file_name = "uploads/" + download(image_url);
+	file_name = "uploads/" + download(image_url)
 
 	result = dict()
 
-	result['file_name'] = file_name
+	result['local e nome da imagen'] = file_name
+	result['classificacao'] = label_image.classifier(file_name)
 
 	response = app.response_class(
-	    response=json.dumps(result),
+	    response=json.dumps(result, encoding='UTF-8',default=str),
 	    status=200,
 	    mimetype='application/json'
 	)
