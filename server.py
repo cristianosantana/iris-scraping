@@ -33,8 +33,8 @@ def predict():
 
 	result = dict()
 
-	result['local e nome da imagen'] = file_name
-	result['classificacao'] = label_image.classifier(file_name)
+	result['local e nome da imagem'] = file_name
+	result['classificação'] = label_image.classifier(file_name)
 
 	response = app.response_class(
 	    response=json.dumps(result, encoding='UTF-8',default=str),
