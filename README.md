@@ -1,18 +1,23 @@
 <h1>API IRIS SCRAPING</h1>
 
+**Clone os repositorios**
+
+<p>https://bitbucket.org/fmbcruz/iris/src/master/</p>
+<p>https://github.com/cristianosantana/TensorFlowKeras.git</p>
+
 **Subir o conteiner**
 
-sudo docker run -it -v ~/Workspace://Workspace --rm -p 5000:5000 --name tensorflow-flask lexcrt/debian:flask-tensorflow /bin/bash 
+<p>sudo docker run -it -v ~/Workspace://Workspace --rm -p 5000:5000 -p 8080:8080 --name tensorflow-flask lexcrt/debian:flask-tensorflow /bin/bash</p>
 
 **Exportar variavel app_name.py**
 
-export FLASK_APP=server.py
-export LC_ALL=C.UTF-8 && export LANG=C.UTF-8
+<p>export FLASK_APP=server.py</p>
+<p>export LC_ALL=C.UTF-8 && export LANG=C.UTF-8</p>
 
 **Roda o comando**
 
-python3.5 server.py
+<p>python3.5 server.py</p>
 
 **Test**
 
-http://localhost:5000/?image_url=https://i.imgur.com/oDf68ZO.jpg
+<p>http://localhost:5000/?image_url=https://i.imgur.com/oDf68ZO.jpg</p>
