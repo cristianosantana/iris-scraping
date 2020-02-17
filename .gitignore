@@ -1,1 +1,5 @@
 TensorFlowKeras/
+master/.gitignore
+.vscode/
+uploads/*
+master/node_modules
