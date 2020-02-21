@@ -2,3 +2,4 @@ master/.gitignore
 .vscode/
 uploads/*
 master/node_modules
+TensorFlowKeras/__pycache__
