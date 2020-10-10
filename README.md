@@ -7,8 +7,8 @@
 
 **Subir o conteiner**
 
-<p>sudo docker run -it -v ~/Workspace://Workspace --rm -p 5000:5000 --name tensorflow-flask lexcrt/debian:flask-tensorflow /bin/bash</p>
-<p>sudo docker run -it -v ~/Workspace://Workspace --rm -p 8080:8080 --name nodejs node:latest /bin/bash</p>
+#sudo docker run -it -v ~/Workspace://Workspace --rm -p 5000:5000 --name tensorflow-flask lexcrt/debian:tensorflow-keras-v1 /bin/bash
+#sudo docker run -it -v ~/Workspace://Workspace --rm -p 8080:8080 --name nodejs node:latest /bin/bash
 
 **Exportar variavel app_name.py**
 
