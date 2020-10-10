@@ -12,14 +12,14 @@
 
 **Exportar variavel app_name.py**
 
-<p>export FLASK_APP=server.py</p>
-<p>export LC_ALL=C.UTF-8 && export LANG=C.UTF-8</p>
+### export FLASK_APP=server.py
+### export LC_ALL=C.UTF-8 && export LANG=C.UTF-8
 
 **Roda o comando**
 
-<p>python3.5 server.py</p>
+### python3.5 server.py
 
-<p>so roda no fire fox </p>
+<p>so roda no fire fox</p>
 
 **Test**
 
